@@ -95,7 +95,6 @@ function endGame() {
 function moveDodger(e) {
   switch(e.which) {
     case LEFT_ARROW:
-<<<<<<< HEAD
       e.stopPropagation();
       e.preventDefault();
       moveDodgerLeft();
@@ -105,34 +104,6 @@ function moveDodger(e) {
       e.stopPropagation();
       e.preventDefault();
       moveDodgerRight();
-=======
-      
-      e.preventDefault();
-      e.stopPropagation();
-
-      leftDown = true;
-      rightDown = false;
-
-      if (!isMoving) {
-        moveDodgerLeft();
-        isMoving = true;
-      }  
-
-      break;
-
-    case RIGHT_ARROW:
-      
-      e.preventDefault();
-      e.stopPropagation();
-
-      leftDown = false;
-      rightDown = true;
-
-      if (!isMoving) {
-        moveDodgerRight();
-        isMoving = true;
-      }  
->>>>>>> 0f25b5717ac317677ea1c22269c58e31fcc46d64
       break;
   }
 }
